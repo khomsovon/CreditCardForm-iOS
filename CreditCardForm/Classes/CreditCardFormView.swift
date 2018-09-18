@@ -9,7 +9,7 @@
 import UIKit
 
 public enum Brands : String {
-    case NONE, Visa, MasterCard, Amex, JCB, DEFAULT, Discover
+    case NONE, Visa, MasterCard, Amex, JCB, DEFAULT, Discover, UnionPay
 }
 
 @IBDesignable
@@ -454,7 +454,6 @@ public class CreditCardFormView : UIView {
             showingBack = false
         }
     }
-    
 }
 
 //: CardColors
@@ -469,6 +468,7 @@ extension CreditCardFormView {
         colors["Diners Club"] = [UIColor.hexStr(hexStr: "#5b99d8", alpha: 1), UIColor.hexStr(hexStr: "#4186CD", alpha: 1)]
         colors[Brands.Discover.rawValue] = [UIColor.hexStr(hexStr: "#e8a258", alpha: 1), UIColor.hexStr(hexStr: "#D97B16", alpha: 1)]
         colors[Brands.DEFAULT.rawValue] = [UIColor.hexStr(hexStr: "#5D8BF2", alpha: 1), UIColor.hexStr(hexStr: "#3545AE", alpha: 1)]
+        colors[Brands.UnionPay.rawValue] = [UIColor.hexStr(hexStr: "#987c00", alpha: 1), UIColor.hexStr(hexStr: "#826a01", alpha: 1)]
     }
 }
 
